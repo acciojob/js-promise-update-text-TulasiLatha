@@ -5,7 +5,7 @@ function helloworld(){
 	},1000)
 }
 const ouputElemnt=document.getElementById('output')
-helloworld.then((message)=>{
+helloworld().then((message)=>{
 	ouputElemnt.innerText=message;
 }).catch((error) => {
   console.error(error);
