@@ -1,12 +1,12 @@
 //your JS code here. If required.
 function helloworld(){
-	setTimeout((resolve,reject)=>{
+	return new Promise((resolve)=>{
+		setTimeout(()=>{
 		reslove("Hello, world!")
-	},1000)
+	},1000)})
 }
-const ouputElemnt=document.getElementById('output')
+
 helloworld().then((message)=>{
+	const ouputElemnt=document.getElementById('output');
 	ouputElemnt.innerText=message;
-}).catch((error) => {
-  console.error(error);
 });
