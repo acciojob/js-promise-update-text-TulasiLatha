@@ -2,7 +2,7 @@
 function helloworld(){
 	return new Promise((resolve)=>{
 		setTimeout(()=>{
-		reslove("Hello, world!")
+		resolve("Hello, world!")
 	},1000)})
 }
 
